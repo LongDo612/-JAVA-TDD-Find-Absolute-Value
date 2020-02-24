@@ -24,13 +24,10 @@ class AbsoluteNumberCalculatorTest {
 
     @Test
     void testFindAbsolute2() {
-        int number = Integer.MAX_VALUE + 1;
-        try {
-            int result = AbsoluteNumberCalculator.findAbsolute(number);
-            assertFalse(false);
-        }catch (Exception e){
-            e.printStackTrace();
-            assertTrue(true);
-        }
+        int number = 1;
+        int expected = 1;
+
+        int result = AbsoluteNumberCalculator.findAbsolute(number);
+        assertEquals(expected,result);
     }
 }
